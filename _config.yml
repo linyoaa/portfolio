@@ -5,8 +5,8 @@
 # 此文件主要包含 Jekyll 技术配置
 # ============================================================
 
-baseurl: "/Type-on-Strap"  # 网站子路径，部署时根据实际情况修改
-url: "https://sylhare.github.io"  # 网站域名
+baseurl: "/portfolio"  # 网站子路径，部署时根据实际情况修改
+url: "https://linyoaa.github.io"  # 网站域名
 
 # ============================================================
 # THEME-SPECIFIC CONFIGURATION
