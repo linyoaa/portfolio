@@ -6,7 +6,7 @@
 # ============================================================
 
 # RSS specific
-rss: true
+rss: false
 feed:
   path: feed.xml
 
@@ -28,7 +28,7 @@ share:
 # ============================================================
 
 # GitHub
-github: your-github-username
+github: linyoaa
 
 # LinkedIn
 linkedin: your-linkedin-username
