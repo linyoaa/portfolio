@@ -1,0 +1,61 @@
+# ============================================================
+# SITE CONFIGURATION
+#
+# 注意：推荐通过 _data/site-content.yml 管理网站内容
+# 此文件主要包含 Jekyll 技术配置
+# ============================================================
+
+baseurl: "/Type-on-Strap"  # 网站子路径，部署时根据实际情况修改
+url: "https://sylhare.github.io"  # 网站域名
+
+# ============================================================
+# THEME-SPECIFIC CONFIGURATION
+# 以下内容可通过 _data/site-content.yml 的 site_info 部分管理
+# ============================================================
+
+title: 杨腾越的作品集网站                                    # site's title
+description: 我是一名开发者，专攻数据分析    # used by search engines
+avatar: assets/img/证件照.jpg                        # Empty for no avatar in navbar
+favicon: assets/favicon.ico                             # Icon displayed in the tab
+
+# Header and footer text
+header_text: 欢迎  # Change Blog header text
+header_feature_image: assets/img/header/triangular.jpeg
+header_feature_image_responsive: true
+footer_text: >
+  © 2026 杨腾越 · 由 <a href="https://jekyllrb.com/">Jekyll</a> 强力驱动 ·
+  主题 <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+
+# Blog
+excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
+post_navigation: true
+color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
+
+# Features
+# More in the _data folder for comments, share buttons, author and language
+# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
+katex: true                                             # Enable if using math markup
+mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
+google_analytics:                                       # Measurement ID, e.g. "G-00000"
+cookie_consent: false                                   # To respect the usage of cookies
+color_theme: auto                                       # auto, dark or light
+
+# PAGINATION
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+# BUILD SETTINGS
+sass:
+  style: compressed
+  quiet_deps: true
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
+
+# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github

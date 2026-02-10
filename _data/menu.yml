@@ -1,0 +1,20 @@
+# ============================================================
+# 导航菜单配置
+#
+# 注意：推荐使用 _data/site-content.yml 中的 navigation 部分来管理导航菜单
+# 此文件用于添加额外的外部链接
+# ============================================================
+
+# 示例：添加外部链接
+# - example:
+#   title: 示例
+#   url: https://example.com
+#   hide: true
+#   position: 2
+
+# 主题链接（可选）
+- type-on-strap:
+  title: "Type on Strap"
+  url: https://github.com/sylhare/Type-on-Strap
+  position: 1
+  hide: true  # 设置为 true 可隐藏此链接

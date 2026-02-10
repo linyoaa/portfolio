@@ -1,0 +1,183 @@
+# ============================================================
+# 网站内容配置文件
+# 通过修改此文件，您可以自定义网站的主要内容
+# ============================================================
+
+# ------------------- 网站基本信息 -------------------
+site_info:
+  title: "杨腾越的作品集网站"
+  description: "我是一名开发者，专攻数据分析"
+  author: "杨腾越"
+  email: "your-email@example.com"  # 您的邮箱地址
+
+  # 头像和图标
+  avatar: "assets/img/证件照.jpg"      # 留空则不在导航栏显示头像
+  favicon: "assets/favicon.ico"         # 浏览器标签页图标
+
+  # 头部欢迎语
+  header_text: "欢迎"
+
+  # 头部特色图片
+  header_feature_image: "assets/img/header/triangular.jpeg"
+  header_feature_image_responsive: true
+
+  # 页脚文字
+  footer_text: "© 2026 杨腾越"
+
+# ------------------- 个人简介（关于页面）-------------------
+about:
+  title: "关于"
+  subtitle: "了解更多关于我的信息"
+  feature_image: "assets/img/pexels/travel.jpeg"
+
+  # 关于页面的内容（支持 Markdown 格式）
+  content: |
+    ## 你好，我是杨腾越
+
+    我是一名开发者，专攻数据分析。我热衷于使用技术来解决实际问题，并创造有价值的产品。
+
+    ### 技能
+
+    - 数据分析
+    - Web 开发
+    - 程序设计
+
+    ### 联系方式
+
+    欢迎通过以下方式联系我：
+    - 邮箱：your-email@example.com
+    - GitHub：your-github-username
+
+# ------------------- 作品集（项目展示）-------------------
+portfolio:
+  title: "作品集"
+  subtitle: "我正在进行的项目"
+  feature_image: "assets/img/pexels/computer.jpeg"
+
+  # 在这里列出您的项目，每个项目对应 _portfolio 文件夹中的一个文件
+  # 格式：项目名称和描述
+  projects:
+    - name: "排产系统"
+      description: "一个高效的生产排程管理系统"
+      category: "Web应用"
+
+    - name: "数据分析工具"
+      description: "数据处理和可视化分析工具"
+      category: "数据科学"
+
+# ------------------- 导航菜单 -------------------
+# 控制顶部导航栏显示的链接
+navigation:
+  - title: "首页"
+    url: "/"
+    icon: ""
+    position: 0
+
+  - title: "关于"
+    url: "/about/"
+    icon: "fa-user"
+    position: 1
+
+  - title: "作品集"
+    url: "/portfolio/"
+    icon: "fa-briefcase"
+    position: 2
+
+  - title: "图库"
+    url: "/gallery/"
+    icon: "fa-images"
+    position: 3
+
+  - title: "分类"
+    url: "/categories/"
+    icon: "fa-folder"
+    position: 4
+
+  - title: "标签"
+    url: "/tags/"
+    icon: "fa-tags"
+    position: 5
+
+  - title: "搜索"
+    url: "/search/"
+    icon: "fa-search"
+    position: 6
+
+  - title: "归档"
+    url: "/archive/"
+    icon: "fa-archive"
+    position: 7
+
+# ------------------- 社交媒体链接 -------------------
+social:
+  # GitHub
+  github:
+    username: "your-github-username"
+    enabled: true
+
+  # LinkedIn
+  linkedin:
+    username: "your-linkedin-username"
+    enabled: false
+
+  # Twitter
+  twitter:
+    username: "your-twitter-username"
+    enabled: false
+
+  # 微信（使用自定义图标）
+  wechat:
+    qr_code: "assets/img/wechat-qrcode.png"  # 微信二维码图片路径
+    enabled: false
+
+  # 邮箱
+  email:
+    address: "your-email@example.com"
+    enabled: true
+
+# ------------------- 图库设置 -------------------
+gallery:
+  title: "图库"
+  subtitle: "来自 pexels 文件夹"
+  path: "assets/img/pexels"  # 图片文件夹路径
+
+# ------------------- 搜索设置 -------------------
+search:
+  title: "搜索"
+  subtitle: "您在找什么？"
+  feature_image: "assets/img/pexels/search-map.jpeg"
+
+# ------------------- 其他页面标题 -------------------
+page_titles:
+  archive: "博客归档"
+  categories: "分类"
+  tags: "标签"
+  404: "页面未找到"
+
+# ------------------- 博客设置 -------------------
+blog:
+  # 每页显示的文章数量
+  posts_per_page: 5
+
+  # 文章摘要设置：true（显示摘要）, "truncate"（截取前250字符）, false（不显示摘要）
+  excerpt: true
+
+  # 是否显示文章导航（上一篇/下一篇）
+  post_navigation: true
+
+# ------------------- 主题设置 -------------------
+theme:
+  # 颜色主题：auto（自动跟随系统）, dark（深色）, light（浅色）
+  color_theme: "auto"
+
+  # 是否启用数学公式渲染（KaTeX）
+  katex: true
+
+  # 是否启用图表渲染（Mermaid）
+  mermaid: "default"
+
+  # Google Analytics 追踪 ID（可选）
+  google_analytics: ""
+
+  # Cookie 同意提示
+  cookie_consent: false
